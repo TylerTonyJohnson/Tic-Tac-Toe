@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TITLE</title>
+    <meta name="description" content="Tic Tac Toe game" />
+    <meta name="author" content="Tyler Tony Johnson" />
+    <meta property="og:title" content="Tic Tac Toe" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.SplinterBL.us" />
+    <meta property="og:description" content="Tic Tac Toe game" />
+    <meta property="og:image" content="image.png" />
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- HEADER -->
+      <h1 class="title">Tic Tac Toe</h1>
+      <div id="buttons" class="buttons">
+        <button onclick="game.setGlyphs">
+          <span id="player1-name" contenteditable="true">Player 1</span><span>: X</span>
+        </button>
+        <button onclick="game.play(event)">RESET</button>
+        <button onclick="game.setGlyphs">
+          <span id="player2-name" contenteditable="true">Player 2</span><span>: O</span>
+        </button>
+      </div>
+      <div id="message-board" class="message-board">
+        <h2 id="message" class="message"></h2>
+      </div>
+    </header>
+    <main>
+      <!-- MAIN -->
+      <div id="ttt-grid" class="ttt-grid"></div>
+      <span></span>
+    </main>
+    <footer>
+      <!-- FOOTER -->
+      <p class="footer">This website made by <a href="https://github.com/Splinterbl" target="_blank">Tyler Tony Johnson</a> as an assignment for the Odin Project</h2>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
